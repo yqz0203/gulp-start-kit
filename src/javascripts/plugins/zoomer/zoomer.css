@@ -1,0 +1,45 @@
+.zoomer{
+    *padding-top:1px;
+    background-color: #f7f7f7;
+    cursor: pointer;
+}
+
+.zoomer:before{
+    content:'';
+    display: table;
+}
+
+.zoomer .zoomer-img{
+    margin:0 auto;
+    position: relative;
+    cursor: move;
+}
+
+.zoomer .zoomer-img img{
+    height:100%;
+    width:100%;
+}
+
+.zoomer .zoomer-pointer {
+    position: absolute;
+    display: none;
+    cursor: move;
+    background-repeat: repeat;
+    background-image: url(./zoomer-bg.png);
+}
+
+.zoomer .zoomer-box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    overflow: hidden;
+    display: none;
+}
+
+.zoomer .zoomer-box img {
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
